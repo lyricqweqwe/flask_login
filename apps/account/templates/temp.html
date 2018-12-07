@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    分页封装
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h1>数据展示区</h1>
+    </div>
+    {% from '_macro.html' import paging  as pag %}
+    {{ pag(pagination,'temp.temps') }}
+{% endblock %}

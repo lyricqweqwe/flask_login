@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% macro paging(pagination,endpooint,page,size)%}
+    <a href="{{ url_for(endpooint) }}/?page=={{ page }}/?size=={size}"></a>
+{% macro input(type,name) %}
+    <input type="{{ type }}"
+    name="{{ name }}">
+</body>
+</html>
